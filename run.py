@@ -18,7 +18,6 @@ edge.append(geometry.Point(-30, 60))
 # Add azimuth
 azimuth = 330
 
-a = geo.compute_form_dir('55.736093',  '37.595041', 100, 90, 4)
 
 t = geometry.get_absolute_coordinates(edge, station_center, azimuth)
 
@@ -28,7 +27,7 @@ for p in t:
     print ','
     print p.lon
 
-
+# a = geo.compute_form_dir('55.736093',  '37.595041', 100, 90, 4)
 # print a.lat
 # print a.lon
 #
